@@ -119,11 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
         answersObj.step4.email = document.getElementById("quiz-email").value;
         answersObj.step4.call = document.getElementById("quiz-call").value;
 
-      // for (let key in answersObj.step4) {
-      //   if (answersObj.step4[key].value === "") {
-      //     alert("Введите даные во все поля");
-      //   }
-      // }
+        for (let key in answersObj.step4) {
+            if (answersObj.step4[key].value === "") {
+                alert("Введите данные во все поля");
+            }
+        }
 
         if (document.getElementById("quiz-policy").checked) {
         postData(answersObj)
